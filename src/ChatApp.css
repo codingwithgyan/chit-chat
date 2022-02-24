@@ -1,0 +1,217 @@
+body {
+  background: linear-gradient(to right, #18191a, #170229, #18191a);
+  color: white;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.navbar > div {
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.room_box {
+  height: 85vh;
+  width: 20vw;
+  position: fixed;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.493);
+  border-left: 1px solid rgba(128, 128, 128, 0.493);
+  border-right: 1px solid rgba(128, 128, 128, 0.493);
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  user-select: none;
+}
+.message_box {
+  height: 85vh;
+  width: 55.5vw;
+  border-top: 1px solid rgba(128, 128, 128, 0.493);
+  border-left: 1px solid rgba(128, 128, 128, 0.493);
+  border-right: 1px solid rgba(128, 128, 128, 0.493);
+  padding: 10px;
+  position: fixed;
+  left: 21.45vw;
+  margin-top: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.member_box {
+  height: 85vh;
+  width: 20vw;
+  position: fixed;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.493);
+  border-left: 1px solid rgba(128, 128, 128, 0.493);
+  border-right: 1px solid rgba(128, 128, 128, 0.493);
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  user-select: none;
+}
+.member_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.member_card:hover {
+  background-color: gray;
+}
+
+.member_card > div:nth-child(2) {
+  padding-left: 10px;
+}
+.member_pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: white;
+}
+.member_name {
+}
+.user_message_left {
+  max-width: fit-content;
+  height: fit-content;
+  background-color: gray;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+  margin-left: 8px;
+  float: left;
+  margin: auto auto auto 20px;
+}
+.arrow_left {
+  float: left;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid gray;
+  position: relative;
+  z-index: 1;
+  left: 10px;
+  margin: auto auto auto 0px;
+  top: 40px;
+}
+.user_message_right {
+  width: fit-content;
+  height: fit-content;
+  float: right;
+  background-color: rgb(66, 13, 151);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin: auto 20px auto auto;
+}
+.arrow_right {
+  float: right;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid rgb(66, 13, 151);
+  position: relative;
+  right: 10px;
+  z-index: 1;
+  margin: auto 0px auto auto;
+  top: 40px;
+}
+
+.bgImage {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./network.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.login_box {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  margin: 0px auto;
+  margin-top: 5%;
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  border-radius: 10px;
+}
+.login_box > div {
+  height: fit-content;
+  width: fit-content;
+}
+.login_input {
+  height: 36px;
+  width: 97%;
+  outline: none;
+  padding-left: 5px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px 0px 5px 0px;
+}
+.login_create {
+  height: 36px;
+  width: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgb(66, 13, 151);
+  margin-bottom: 35px;
+}
+.login_logo {
+  margin: auto;
+  width: 60px !important;
+  height: 60px !important;
+  background-image: url("./room.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.login_create:hover {
+  background-color: rgb(151, 94, 243);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #170229;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #51118a;
+  border-radius: 5px;
+}
