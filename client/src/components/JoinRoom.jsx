@@ -18,7 +18,7 @@ export function JoinRoom()
           name:username,
           room_id:roomId,
         });
-        socket.on("joined_room",(data)=>{
+        socket.on("joined_room_join",(data)=>{
           setOnlineUsers(data.onlineUsers);
           data=data.data;
           console.log("User joined a room successfully",data);
