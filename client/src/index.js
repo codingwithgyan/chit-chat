@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import {BrowserRouter} from 'react-router-dom';
+import {SocketContextProvider} from "./context/SocketContext";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <SocketContextProvider>
+      <App />
+    </SocketContextProvider>  
+    </BrowserRouter>  
   </React.StrictMode>,
   document.getElementById('root')
 );

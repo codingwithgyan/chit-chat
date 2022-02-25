@@ -34,12 +34,13 @@ body {
   user-select: none;
 }
 .message_box {
-  height: 85vh;
+  height: 78vh;
   width: 55.5vw;
   border-top: 1px solid rgba(128, 128, 128, 0.493);
   border-left: 1px solid rgba(128, 128, 128, 0.493);
   border-right: 1px solid rgba(128, 128, 128, 0.493);
   padding: 10px;
+  padding-bottom: 50px;
   position: fixed;
   left: 21.45vw;
   margin-top: 10px;
@@ -114,7 +115,7 @@ body {
   z-index: 1;
   left: 10px;
   margin: auto auto auto 0px;
-  top: 40px;
+  top: 19vh;
 }
 .user_message_right {
   width: fit-content;
@@ -135,7 +136,7 @@ body {
   right: 10px;
   z-index: 1;
   margin: auto 0px auto auto;
-  top: 40px;
+  top: 19vh;
 }
 
 .bgImage {
@@ -187,6 +188,38 @@ body {
   user-select: none;
   background-color: rgb(66, 13, 151);
   margin-bottom: 35px;
+}
+.message_input_box {
+  position: fixed;
+  bottom: 25px;
+  left: 21.45vw;
+  height: fit-content;
+  width: fit-content;
+  z-index: 10;
+}
+.message_input {
+  height: 36px;
+  width: 52.35vw;
+  outline: none;
+  border: none;
+  border: 1px solid gray;
+  color: black;
+  font-style: italic;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: right;
+  padding-right: 50px;
+}
+.send_icon {
+  height: 25px;
+  width: 25px;
+  background-image: url("./send-message.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  bottom: -6px;
+  right: 42px;
+  float: right;
 }
 .login_logo {
   margin: auto;
