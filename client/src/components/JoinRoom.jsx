@@ -18,6 +18,11 @@ export function JoinRoom()
           name:username,
           room_id:roomId,
         });
+
+        socket.on("joined_room",(data)=>{
+          setOnlineUsers(data.onlineUsers);
+         });
+
         socket.on("joined_room_join",(data)=>{
           setOnlineUsers(data.onlineUsers);
           data=data.data;

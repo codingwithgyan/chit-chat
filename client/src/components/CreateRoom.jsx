@@ -17,12 +17,15 @@ export function CreateRoom()
           name:username,
           room,
     });
+    socket.on("joined_room",(data)=>{
+      setOnlineUsers(data.onlineUsers);
+  });
     socket.on("joined_room_create",(data)=>{
-        setOnlineUsers(data.onlineUsers);
         data=data.data;
         console.log("User joined a room successfully",data);
         navigate(`/chat?id=${data.room_id}&name=${data.name}&room=${data.room}`);
     });
+    
   }
     return <div className="bgImage">
                 <Navbar/>

@@ -27,12 +27,14 @@ io.on("connection",(socket)=>{
         data={...data,room_id:uuid()};
         socket.join(data.room_id);
         onlineUsers.push({name:data.name,socket_id:socket.id});
+        io.to(data.room_id).emit("joined_room",{data,onlineUsers})
         io.to(data.room_id).emit("joined_room_create",{data,onlineUsers});
         console.log(onlineUsers);
     });
     socket.on("join_a_room",(data)=>{
         socket.join(data.room_id);
         onlineUsers.push({name:data.name,socket_id:socket.id});
+        io.to(data.room_id).emit("joined_room",{data,onlineUsers})
         io.to(data.room_id).emit("joined_room_join",{data,onlineUsers});
         console.log(onlineUsers);
     });
