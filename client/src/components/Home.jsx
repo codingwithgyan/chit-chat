@@ -46,7 +46,9 @@ export function Home()
     return <div>
                 <Navbar/>
                 <RoomBox/>
-                
+                <div className='share_btn' onClick={
+                    (e)=>{navigator.clipboard.writeText(room_id)
+                    }}>{room_id} &nbsp;📋</div>
                 <MemberBox/>
                 <div className='message_input_box'>
                     <input onKeyPress={(e)=>{ 
