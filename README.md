@@ -19,7 +19,7 @@ An simple chat application.
 <strong>step-4</strong> : Start chating <br/>
 <h4>Demo</h4>
 <div>
-  <a href="https://www.youtube.com/watch?v=Yqrlud-2GNo"><img src="https://yt-embed.herokuapp.com/embed?v=Yqrlud-2GNo" alt="Chit chat"></a>
+  <a href="https://www.youtube.com/watch?v=Yqrlud-2GNo">Demo Link</a>
 </div>
 
 <br/>
